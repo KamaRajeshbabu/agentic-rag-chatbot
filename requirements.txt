@@ -1,0 +1,11 @@
+python-dotenv
+sentence-transformers
+transformers
+requests
+docx2txt
+PyMuPDF
+python-pptx
+pandas
+markdown2
+faiss-cpu
+langchain
