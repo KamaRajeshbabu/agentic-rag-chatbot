@@ -3,9 +3,6 @@
 > An open-source, **modular Retrieval-Augmented Generation (RAG) chatbot** powered by Hugging Face Transformers and LangChain.  
 > **Secure, extendable, and production-ready AI assistant.**
 
-![Banner](<img width="1536" height="1024" alt="generated-image" src="https://github.com/user-attachments/assets/7c845f6c-f70c-4651-a3c8-479daf225eb0" />)
-
-
 ## 🚀 Why This Project?
 
 Most chatbots are just wrappers over LLM APIs.  
