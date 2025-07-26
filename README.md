@@ -1,28 +1,51 @@
-# Agentic RAG Chatbot
+# 🤖 Agentic RAG Chatbot
 
-A Retrieval-Augmented Generation chatbot using an agent-based architecture and Model Context Protocol (MCP) for document-based question answering.
+> An open-source, modular Retrieval-Augmented Generation (RAG) chatbot powered by Hugging Face Transformers and LangChain. Designed for secure, extendable, and production-ready AI assistants.
 
-## 🧠 Architecture
+---
 
-- IngestionAgent: Parses documents (PDF, DOCX, CSV, etc.)
-- RetrievalAgent: Embeds + retrieves relevant chunks from vector store
-- LLMResponseAgent: Forms prompt and gets answer from LLM
-- MCP: Used to pass structured messages between agents
+## 🚀 Why This Project Exists
 
-## 🖼️ UI
+Most chatbots are just wrappers over LLM APIs. This one’s different.
 
-Built using Streamlit. Allows multi-format upload + Q&A.
+Agentic RAG Chatbot combines:
+- **Agentic reasoning** (tasks, tools, planning)
+- **RAG** (retrieval from context-aware sources)
+- **Secure config management**
+- A modular, production-ready codebase you can build real tools on.
 
-## ⚙️ Stack
+---
 
-- Python, Streamlit
-- Sentence Transformers (MiniLM)
-- FAISS
-- Hugging Face LLMs (Falcon 7B)
-- MCP for message flow
+## 🧠 Core Features
 
-## 📦 Setup
+✅ **Agentic LLM Behavior**  
+Modular agent that uses LangChain-style tool invocation and chaining logic.
 
-```bash
-pip install -r requirements.txt
-streamlit run app.py
+✅ **Retrieval-Augmented Generation**  
+Fetches data from documents, web sources, or APIs to ground LLM answers in facts.
+
+✅ **Clean Structure**  
+Split into isolated `utils/` for embedding, LLM, scraping, text processing.
+
+✅ **Secure**  
+Git-ignored `.env`, secrets excluded, safe to deploy or share.
+
+✅ **Hackable**  
+Clear code. Easy to extend. No bloated architecture or overengineering.
+
+---
+
+## 📁 Project Structure
+├── config.json
+├── requirements.txt
+├── retrieval_agent.py
+├── test_hf_model.py
+└── utils/
+├── embedding_utils.py
+├── file_utils.py
+├── llm_utils.py
+├── retrieval_utils.py
+├── scraper_utils.py
+└── text_utils.py
+
+
